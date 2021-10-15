@@ -1,0 +1,21 @@
+{
+  "name": "talisman-example",
+  "version": "0.0.0",
+  "description": "Talisman example",
+  "scripts": {
+    "prepare": "husky install",
+    "talisman:checksum": "scripts/talisman/scan-cli.sh",
+    "talisman:scan": "scripts/talisman/scan.sh",
+    "talisman:view": "scripts/talisman/view.sh",
+    "talisman:precommit": "${TALISMAN_HOME}/talisman_hook_script pre-commit",
+    "talisman:prepush": "${TALISMAN_HOME}/talisman_hook_script pre-push"
+  },
+  "author": "Matt Norris",
+  "license": "Apache-2.0",
+  "config": {
+    "talisman": "${TALISMAN_HOME}/talisman_darwin_amd64"
+  },
+  "devDependencies": {
+    "husky": "^7.0.2"
+  }
+}

@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Uncomment to run Talisman before committing.
+# npm run talisman:precommit
